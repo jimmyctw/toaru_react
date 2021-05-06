@@ -1,0 +1,58 @@
+@import "init";
+@import "mixin";
+
+$dark: #0A0908;
+$alert: #CC2936;
+$white: #F2F4F3;
+$bright: #00A6FB;
+$assist: #F3DE8A;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size: 2rem;
+}
+h2{
+    font-size: 1.8rem;
+}
+h3{
+    font-size: 1.6rem;
+}
+h4{
+    font-size: 1.4rem;
+}
+h5, span, p{
+    font-size: 1.2rem;
+}
+
+.header{
+
+    @include flexR;
+    justify-content: space-between
+
+}
+.nav{
+    .nav-list{
+        @include flexR;
+    }
+    li{
+        padding: .5rem;
+    }
+    
+}
+
+.main{
+    height: 85vh;
+    background-color: $assist
+}
+
+
+
+
+.footer{
+    @include flexC;
+    width: 100vw;
+}
