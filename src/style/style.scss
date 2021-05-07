@@ -3,7 +3,7 @@
 
 $dark: #0A0908;
 $alert: #CC2936;
-$white: #F2F4F3;
+$white: #F6F6F6;
 $bright: #00A6FB;
 $assist: #F3DE8A;
 
@@ -27,14 +27,31 @@ h4{
 h5, span, p{
     font-size: 1.2rem;
 }
+section{
+    width: 100%;
+    height: 100%;
+    @include flexC;
+    padding: 1rem;
+}
+
+li:hover{
+    color: $alert;
+}
+
 
 .header{
 
     @include flexR;
-    justify-content: space-between
+    justify-content: space-between;
+    background-color: $white;
+    .header_logo{
+        @include flexC;
+    }
 
 }
 .nav{
+    padding: 1rem;
+
     .nav-list{
         @include flexR;
     }
@@ -45,14 +62,52 @@ h5, span, p{
 }
 
 .main{
-    height: 85vh;
+    width: 100vw;
     background-color: $assist
 }
 
 
 
+.home{
+    background-color: $dark;
+    &_video{
+        height: 70vh;
+    }
+}
 
+
+.about{
+    @include flexC;
+    text-align: center;
+}
+
+
+
+
+
+//main---contact---form------------
+
+
+form{
+    @include flexC;
+    width: 300px;
+}
+input, textarea{
+    width: 100%;
+    margin: .5rem 0;
+    padding: .5rem;
+}
+
+
+//footer------------------
 .footer{
     @include flexC;
     width: 100vw;
+    padding: 1rem;
+    background-color: $white;
+    .footer-info, .footer_name{
+        @include flexC;
+        text-align: center;
+
+    }
 }
