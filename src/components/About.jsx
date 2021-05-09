@@ -1,16 +1,12 @@
 import React, { useState } from 'react';
+import { ServiceItems } from './ServiceItems';
+import { ValueItems } from './ValueItems';
 
 const About = () => {
     return ( 
         <section className="about">
-
-            <div className="service">
-                
-                <h1>Service</h1>
-                <div>
-
-                </div>
-            </div>
+            < ValueItems />
+            < ServiceItems />
 
         </section> 
     );

@@ -10,7 +10,7 @@ const Header = () => {
     return ( 
     <header className="header">
         <div className="header_logo">
-            <Link to="/">
+            <Link to="/" >
                 <img src={ process.env.PUBLIC_URL + '/assets/logo.png' } />
             </Link>
         </div>
