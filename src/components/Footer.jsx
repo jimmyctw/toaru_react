@@ -15,6 +15,7 @@ const Footer = () => {
         <footer className="footer">
             
             <div className="footer_company">
+                <SnsItems />
                 <div className="footer_company_info">
                     <span> トアル株式会社 TOARU Inc.  <img src={ process.env.PUBLIC_URL + '/assets/logo.png' } /></span>
                     <address>
@@ -24,11 +25,12 @@ const Footer = () => {
                     </address>
                 </div>
 
-                <SnsItems />
+
             </div>  
             <div className="footer_copyright">
                 <span>{makeUpperCase(copyInfo)} 2021 &nbsp;<FaRegCopyright /></span>
             </div>
+                <span>This website is powered by React</span>
         </footer>
     );
 }

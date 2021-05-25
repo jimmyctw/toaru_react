@@ -1,11 +1,11 @@
 import React from 'react'
-import { QuestionItems } from './QuestionItems';
+import { Questions } from './Questions';
 import { Form } from './Form';
 
 const Contact = () => {
     return ( 
         <section className="contact">
-            < QuestionItems />
+            < Questions />
             < Form />
         </section> 
     );

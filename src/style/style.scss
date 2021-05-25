@@ -220,12 +220,20 @@ li:hover{
     margin: .5rem;
     border-radius: 1rem;
     background-color: rgba($dark, .5);
-
-    .questionItem{
-        margin-bottom: 1rem;
-    }
 }
 
+.questionItem{
+    margin-bottom: 1rem;
+    padding: .5rem;
+    &_content{
+        @include flexR;
+        justify-content: space-between;
+        font-weight: bolder;
+    }
+    &_btn{
+        background: transparent;
+    }
+}
 
 form{
     @include flexC;

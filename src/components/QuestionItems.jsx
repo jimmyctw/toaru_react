@@ -1,25 +1,19 @@
-import React from 'react';
-import { questionData } from '../data'
+import React, { useState } from 'react';
+import { GiClick } from "react-icons/gi";
+import { VscChevronDown } from "react-icons/vsc";
 
 
-export const QuestionItems = () => {
-
+export const QuestionItems = ({question, answer}) => {
+    const [ showInfo, setShowInfo ] = useState(false)
     return ( 
-        <section className="question">
-            <h1>Question</h1>
-            <div className="questionContainer">
-            { questionData.map((questionItem)=>{
-                const { id, question, answer } = questionItem;
-                return(
-                    <article key={id} className="questionItem">
-                        <button>{question}</button>
-                        <p>{answer}</p>
-                    </article>
-                )
-            })
-
-            }
+        <article  className="questionItem">                
+            <div className="questionItem_content">                    
+                <span className="questionItem_qu">{question}</span>                    
+                <button className="questionItem_btn" onClick={()=>setShowInfo(!showInfo)}>
+                    { showInfo ?   <VscChevronDown/> : <GiClick /> }
+                </button>
             </div>
-        </section>
+            { showInfo && <p>{answer}</p> }
+        </article>
     );
 }

@@ -8,11 +8,11 @@ export const SnsItems = () => {
         <div className="sns">
             <span>Follow TOARU & Get Latest NEWS <ImPointDown/></span>
             <ul className="snsContainer">
-                <li><a href="#"><ImYoutube /></a></li>
-                <li><a href="#"><ImTwitter /></a></li>
-                <li><a href="#"><ImFacebook2 /></a></li>
-                <li><a href="#"><ImInstagram /></a></li>
-                <li><a href="#"><ImLinkedin /></a></li>
+                <li><a target="_blank" href="https://www.youtube.com/"><ImYoutube /></a></li>
+                <li><a target="_blank" href="https://twitter.com/home"><ImTwitter /></a></li>
+                <li><a target="_blank" href="https://www.facebook.com/"><ImFacebook2 /></a></li>
+                <li><a target="_blank" href="https://www.instagram.com/"><ImInstagram /></a></li>
+                <li><a target="_blank" href="https://www.linkedin.com/"><ImLinkedin /></a></li>
             </ul>
         </div>
     );

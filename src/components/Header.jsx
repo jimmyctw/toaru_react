@@ -1,30 +1,25 @@
 import React  from 'react';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
     return ( 
     <header className="header">
         <div className="header_logo">
-            <Link to="/" >
+            <NavLink to="/"  activeStyle={{ fontWeight: "bold", color: "#CC2936" }}>
                 <img src={ process.env.PUBLIC_URL + '/assets/logo.png' } />
-            </Link>
+            </NavLink>
         </div>
-        <nav className="nav">
+        <nav className="nav" >
             <ul className="nav-list">
-                <Link to="about"> 
+                <NavLink to="about"  activeStyle={{ fontWeight: "bold", color: "#CC2936" }}> 
                     <li>About</li>
-                </Link>
-                <Link to="team"> 
+                </NavLink>
+                <NavLink to="team"  activeStyle={{ fontWeight: "bold", color: "#CC2936" }}> 
                     <li>Team</li>
-                </Link>
-                <Link to="contact"> 
+                </NavLink>
+                <NavLink to="contact"  activeStyle={{ fontWeight: "bold", color: "#CC2936" }}> 
                     <li>Contact</li>
-                </Link>
+                </NavLink>
             </ul>
         </nav> 
         </header>
